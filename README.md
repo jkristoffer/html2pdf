@@ -1,4 +1,4 @@
-# html2pdf
+# @jk27/html2pdf
 
 Convert a local HTML file or string to a PDF using headless Chromium (Puppeteer). Simple CLI with sensible defaults for printable documents. Supports Unix-style piping.
 
@@ -8,6 +8,14 @@ Convert a local HTML file or string to a PDF using headless Chromium (Puppeteer)
 - Puppeteer (installed via `npm install`) will download a compatible Chromium
 
 ## Install
+
+### From Git (SSH)
+
+```bash
+npm i git+ssh://git@github.com:jkristoffer/html2pdf.git#v1.0.0
+```
+
+### Local / Development
 
 - Clone and install dependencies:
 
@@ -56,7 +64,7 @@ cat input.html | html2pdf > out.pdf
 You can use the core library in your own Node.js applications.
 
 ```javascript
-import { generatePdf } from './lib/pdf.js';
+import { generatePdf } from '@jk27/html2pdf';
 
 // Generate from HTML string
 const pdfBuffer = await generatePdf({
