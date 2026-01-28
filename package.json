@@ -1,0 +1,16 @@
+{
+  "name": "html2pdf-cli",
+  "version": "1.0.0",
+  "bin": {
+    "html2pdf": "./bin/html2pdf.mjs"
+  },
+  "type": "module",
+  "scripts": {
+    "demo": "node bin/html2pdf.mjs test/quotation.with-sample-css.html out.pdf",
+    "test": "node bin/html2pdf.mjs test/quotation.with-sample-css.html test/out.pdf",
+    "browsers:install": "npx puppeteer browsers install chrome"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
