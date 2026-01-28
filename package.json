@@ -1,8 +1,13 @@
 {
-  "name": "html2pdf-cli",
+  "name": "@jk27/html2pdf",
   "version": "1.0.0",
   "bin": {
     "html2pdf": "./bin/html2pdf.mjs"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./lib/pdf.js": "./lib/pdf.js"
   },
   "type": "module",
   "scripts": {
