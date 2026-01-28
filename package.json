@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "demo": "node bin/html2pdf.mjs test/quotation.with-sample-css.html out.pdf",
-    "test": "node bin/html2pdf.mjs test/quotation.with-sample-css.html test/out.pdf",
+    "test": "node test/smoke.mjs",
     "browsers:install": "npx puppeteer browsers install chrome"
   },
   "dependencies": {
