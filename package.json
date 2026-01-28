@@ -1,6 +1,26 @@
 {
   "name": "@jk27/html2pdf",
   "version": "1.0.0",
+  "description": "Convert HTML to PDF using headless Chromium with support for Unix-style piping",
+  "keywords": [
+    "html",
+    "pdf",
+    "puppeteer",
+    "chromium",
+    "converter",
+    "print",
+    "a4"
+  ],
+  "license": "ISC",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkristoffer/html2pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jkristoffer/html2pdf/issues"
+  },
+  "homepage": "https://github.com/jkristoffer/html2pdf#readme",
   "bin": {
     "html2pdf": "./bin/html2pdf.mjs"
   },
@@ -10,6 +30,12 @@
     "./lib/pdf.js": "./lib/pdf.js"
   },
   "type": "module",
+  "files": [
+    "bin/",
+    "lib/",
+    "index.js",
+    "README.md"
+  ],
   "scripts": {
     "demo": "node bin/html2pdf.mjs test/quotation.with-sample-css.html out.pdf",
     "test": "node test/smoke.mjs",

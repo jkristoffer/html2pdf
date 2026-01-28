@@ -1,0 +1,18 @@
+# Development files
+test/
+GUIDELINES.md
+out.pdf
+
+# Git files
+.git/
+.gitignore
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+*.log
+
+# Environment
+.env
+.env.*
